@@ -1,0 +1,318 @@
+/* style.css */
+
+div.spoiler {
+  cursor: pointer;
+}
+ 
+div.spoiler div.contenuSpoiler {
+  display: none;
+}
+
+#spoiler a:hover
+{
+  color:#FF4024;
+}
+
+h6 {
+  text-align:center;
+  font-size:25px;
+  color:#00918b;
+}
+
+body{
+  margin: 0px;
+  color: rgb(50,50,50);
+  background: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  font-size: 40px;
+  text-align: center;
+  color: #ff6524;
+  padding:35px;
+  line-height: 60px;
+}
+
+h2{
+  color:#ff6524;
+  font-size: 25px;
+}
+
+h3{
+  font-size: 30px;
+  text-align: center;
+  line-height: 35px;
+  color: #ff6524;
+}
+
+h4{
+  line-height: 20px;
+}
+
+h5{
+  font-size: 17px;
+  line-height: 30px;
+}
+
+p{
+  line-height: 20px;
+}
+
+a:hover{
+  color:#FF4024 ;
+  text-decoration:none;
+}
+
+a{
+  color:#00918b ;
+}
+
+.details{
+  padding:40px;
+  text-align:center;
+}
+
+.details img{
+  border-style: solid;
+  border-radius: 10px;
+  border-color: grey;
+  border-width:2px;
+  box-shadow: 0px 8px 12px #aaa;
+  margin:5px;
+}
+
+#special{
+background-color:#ff6524; 
+color:rgb(252,252,252);
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#special:hover{
+  background-color:#FF4024;
+  color:rgb(252,252,252);
+}
+
+#my-header{
+  vertical-align: middle;
+  background-size: cover;
+  height: 450px;
+  text-shadow: 1px 1px 5px black;
+  padding-top: 175px;
+  padding-right: 10px;
+  margin:0px;
+}
+
+#my-header h1{
+  color:rgb(252,252,252);
+  font-size: 30px;
+  text-align:left;
+  padding:0px;
+}
+
+.feature{
+  padding: 30px;
+}
+
+.feature img{
+  padding: 5px;
+}
+
+.use{
+  padding: 20px;
+}
+
+.use h1{
+  font-size: 35px;
+  text-align: left;
+  color: #00918B;
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+.citation{
+  font-size:30px; 
+  line-height: 30px;
+  padding:30px;
+  padding-top: 50px; 
+  color:grey;
+  text-align:center;
+}
+
+.auteur{
+  font-size:15px;
+  line-heigt:15px;
+  padding-bottom:20px;
+  text-align:center;
+}
+
+.case{
+  background-color:#00918B; 
+  color:rgb(252,252,252);
+  padding:20px; 
+  text-align:center; 
+  font-size:30px; 
+}
+
+.case ul{
+  font-size:18px;
+  line-height:30px;
+  text-align:left;
+  padding-top:20px;
+}
+
+.prix{
+  background-color:#00918B; 
+  color:rgb(252,252,252);
+  padding-top:20px;
+  padding-bottom:20px;
+  text-align:center; 
+  font-size:30px; 
+  border-style: solid;
+  border-radius: 10px;
+  border-color: grey;
+  border-width:2px;
+  box-shadow: 0px 8px 12px #aaa;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.prix h1{
+  font-size: 35px;
+  font-color:rgb(252,252,252);
+}
+
+#my-footer{
+  padding: 50px;
+  margin:0px;
+  background: #00918b;
+  text-align:center;
+  color: rgb(252,252,252);
+}
+
+#my-footer a{
+  color: rgb(252,252,252);
+  font-size: 15px;
+}
+
+#my-footer a:hover {
+  color: #FF4024;
+}
+
+#my-footer i{
+  font-size: 30px;
+}
+
+
+.navbar{
+background-color: rgb(252,252,252);
+color: red;
+font-size: 17px;
+box-shadow: 0px 2px 15px #aaa ;
+}
+
+.navbar:hover{
+  color: #FF4024;
+}
+
+#navbar a:hover{
+  color: #FF4024;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+input, textarea {
+    width: 250px;
+    border: 1px solid #999;
+    padding:8px;
+}
+
+input {
+    width: 300px;
+}
+
+input:focus, textarea:focus {
+    border-color: #FF4024;
+    outline: none;
+    box-shadow: 0 0px 4px #FF4024;
+  }
+
+textarea {
+    height: 140px;
+    width: 500px;
+}
+
+button {
+  padding:10px;
+}
+
+#boutton
+{
+  background-color: #ff6524;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-left:10px;
+  padding-right:10px;
+  font-size:20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#boutton:hover
+{
+  background-color: #FF4024;
+}
+
+#carte{
+  height:100%; 
+  margin:0px; 
+  padding:0px;
+}
+
+.subsub{
+}
+
+#map-canvas {
+  height: 100%;
+  margin: 0px;
+  padding: 0px
+}
+
+.controls {
+  margin-top: 16px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+  background-color: #fff;
+  padding: 0 11px 0 13px;
+  width: 400px;
+  font-size: 15px;
+  font-weight: 300;
+  text-overflow: ellipsis;
+}
+
+#pac-input:focus {
+  border-color: #FF4024;
+  margin-left: -1px;
+  padding-left: 14px;
+  width: 401px;
+}
+
+#type-selector {
+  color: #fff;
+  background-color: #ff6524;
+  padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+  font-size: 13px;
+  font-weight: 300;
+}
