@@ -24,6 +24,14 @@ body{
   color: rgb(50,50,50);
   background: white;
   font-family: 'Open Sans', sans-serif;
+  max-width: 1500px;
+  margin: 0 auto !important;
+  float: none !important;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: grey;
+  border-width:2px;
+  box-shadow: 0px 8px 12px #aaa;
 }
 
 h1{
