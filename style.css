@@ -187,7 +187,8 @@ box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 #my-footer{
-  padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin:0px;
   background: #00918b;
   text-align:center;
