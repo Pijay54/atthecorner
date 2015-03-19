@@ -34,13 +34,14 @@
 </script>
 
     <!--Comptage du nombre de téléchargement de la plaquette-->
-<script type="text/javascript" charset="utf-8">
-$(document).ready(function(){
-    $('#plaquette').click(function() {
-        ga('send', 'event', 'telechargement de la plaquette', 
-                'click', 'image');
-    });
-});
+<script>
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+     function () {
+     document.location = url;
+     }
+   });
+}
 </script>
 
 <!-- Informations cookies-->
@@ -421,7 +422,7 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
 
       </div>
     </div>
-    <div style="text-align:center; font-size:15px;">Pour plus d'infos, <a href="images/At The Corner - Plaquette.pdf" style="text-align:center" target="_blank" id="imagePDF">
+    <div style="text-align:center; font-size:15px;">Pour plus d'infos, <a href="images/At The Corner - Plaquette.pdf" onclick="trackOutboundLink(‘images/At The Corner - Plaquette.pdf’); return false;" style="text-align:center" target="_blank">
         téléchargez notre plaquette</a> ou <a href="mailto:contact@atthecorner.fr">contactez-nous</a></div>
     <div style="height:40px;" ></div>
 
