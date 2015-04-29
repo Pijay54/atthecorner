@@ -312,6 +312,19 @@ width:500,
 openOnLoad:true
 });
 </script>
+<a id="lightboxdelay" class="lightbox-51186056397361"></a>
+
+
+<script language="JavaScript">
+var delayseconds = 7;
+    function pause() {
+    myTimer = setTimeout('whatToDo()', delayseconds * 1000)
+    }
+   function whatToDo() {
+document.getElementById('lightboxdelay').click();
+    }
+window.onload = pause;
+</script>
 
     <!-- Navbar. -->
     <nav class="navbar navbar-default navbar-fixed-top" style ="max-width: 1500px; margin: 0 auto !important; float: none !important;">
