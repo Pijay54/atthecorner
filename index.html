@@ -71,8 +71,9 @@ tagAnalyticsCNIL.CookieConsent = function() {
         div.innerHTML =  '<div style="background-color:#fff;text-align:center;padding-top:60px;padding-bottom:10px;font-size:12px;\
         border-bottom:1px solid #eeeeee;" id="cookie-banner-message" align="center">Ce site utilise Google\
         Analytics. En continuant à  naviguer, vous nous autorisez à déposer un cookie à des fins de mesure\
-        d\'audience. <a href="javascript:tagAnalyticsCNIL.CookieConsent.showInform()" \
-        style="text-decoration:underline;"> En savoir plus ou s\'opposer</a>.</div>';
+        d\'audience. <a href="#" style="text-decoration:underline;" name="cancel" onclick="tagAnalyticsCNIL.CookieConsent.hideInform()"\
+        >Accepter</a> ou <a href="javascript:tagAnalyticsCNIL.CookieConsent.showInform()" \
+        style="text-decoration:underline;">en savoir plus</a>.</div>';
         // Vous pouvez modifier le contenu ainsi que le style
         // Ajoute la bannière juste au début de la page 
         bodytag.insertBefore(div,bodytag.firstChild); 
