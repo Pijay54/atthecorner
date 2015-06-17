@@ -67,17 +67,19 @@ tagAnalyticsCNIL.CookieConsent = function() {
         var div = document.createElement('div');
         div.setAttribute('id','cookie-banner');
         div.setAttribute('width','70%');
+                bodytag.insertBefore(div,bodytag.firstChild); 
+        document.getElementsByTagName('body')[0].className+=' cookiebanner';    
+        createInformAndAskDiv();
         // Le code HTML de la demande de consentement
         div.innerHTML =  '<div style="background-color:#fff;text-align:center;padding-top:60px;padding-bottom:10px;font-size:12px;\
         border-bottom:1px solid #eeeeee;" id="cookie-banner-message" align="center">Ce site utilise Google\
         Analytics. En continuant à  naviguer, vous nous autorisez à déposer un cookie à des fins de mesure\
         d\'audience. <a href="javascript:tagAnalyticsCNIL.CookieConsent.showInform()" \
-        style="text-decoration:underline;"> En savoir plus ou s\'opposer</a>.</div>';
+        style="text-decoration:underline;"> En savoir plus ou s\'opposer</a>.<button style="text-decoration:underline;" name="cancel" onclick="tagAnalyticsCNIL.CookieConsent.hideInform()"\
+        >Accepter</button></div>';
         // Vous pouvez modifier le contenu ainsi que le style
         // Ajoute la bannière juste au début de la page 
-        bodytag.insertBefore(div,bodytag.firstChild); 
-        document.getElementsByTagName('body')[0].className+=' cookiebanner';    
-        createInformAndAskDiv();
+
      }
           
           
