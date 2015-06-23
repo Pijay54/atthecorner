@@ -73,8 +73,8 @@ tagAnalyticsCNIL.CookieConsent = function() {
         border-bottom:1px solid #eeeeee;" id="cookie-banner-message" align="center">Ce site utilise Google\
         Analytics. En continuant à  naviguer, vous nous autorisez à déposer un cookie à des fins de mesure\
         d\'audience. <button style="text-decoration:underline;" name="cancel" onclick="tagAnalyticsCNIL.CookieConsent.hideInform()"\
-        >Accepter</button><a href="javascript:tagAnalyticsCNIL.CookieConsent.showInform()" \
-        style="text-decoration:underline;"> En savoir plus ou s\'opposer</a>.</div>';
+        >Fermer </button><a href="javascript:tagAnalyticsCNIL.CookieConsent.showInform()" \
+        style="text-decoration:underline;"> En savoir plus</a>.</div>';
                         bodytag.insertBefore(div,bodytag.firstChild); 
         document.getElementsByTagName('body')[0].className+=' cookiebanner';    
         createInformAndAskDiv();
