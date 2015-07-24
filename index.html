@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>At The Corner, un hôtelier de votre quartier s'occupe de vos clés</title>
+    <meta name="description" content="Ne râtez plus de locations de votre logement pour des raisons logistiques" />
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>AT THE CORNER</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
+
     <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Open+Sans:700italic,400' rel='stylesheet' type='text/css'>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -65,17 +70,19 @@ tagAnalyticsCNIL.CookieConsent = function() {
         var div = document.createElement('div');
         div.setAttribute('id','cookie-banner');
         div.setAttribute('width','70%');
+
         // Le code HTML de la demande de consentement
         div.innerHTML =  '<div style="background-color:#fff;text-align:center;padding-top:60px;padding-bottom:10px;font-size:12px;\
         border-bottom:1px solid #eeeeee;" id="cookie-banner-message" align="center">Ce site utilise Google\
         Analytics. En continuant à  naviguer, vous nous autorisez à déposer un cookie à des fins de mesure\
         d\'audience. <a href="javascript:tagAnalyticsCNIL.CookieConsent.showInform()" \
         style="text-decoration:underline;"> En savoir plus ou s\'opposer</a>.</div>';
-        // Vous pouvez modifier le contenu ainsi que le style
-        // Ajoute la bannière juste au début de la page 
-        bodytag.insertBefore(div,bodytag.firstChild); 
+                        bodytag.insertBefore(div,bodytag.firstChild); 
         document.getElementsByTagName('body')[0].className+=' cookiebanner';    
         createInformAndAskDiv();
+        // Vous pouvez modifier le contenu ainsi que le style
+        // Ajoute la bannière juste au début de la page 
+
      }
           
           
@@ -284,9 +291,38 @@ tagAnalyticsCNIL.CookieConsent.start();
   </head>
   
   <body>
+
+        <!-- Popup
+    <script src="http://d2g9qbzl5h49rh.cloudfront.net/static/feedback2.js?3.2.6907" type="text/javascript">
+var JFL_51186056397361 = new JotformFeedback({
+formId:'51186056397361',
+base:'http://jotformeu.com/',
+windowTitle:'Formulaire de collecte d\'email',
+background:'#FFA500',
+fontColor:'#FFFFFF',
+type:1,
+height:400,
+width:500
+});
+</script>
+<a id="lightboxdelay" class="lightbox-51186056397361"></a>
+
+
+<script language="JavaScript">
+var delayseconds = 10;
+    function pause() {
+    myTimer = setTimeout('whatToDo()', delayseconds * 1000)
+    }
+   function whatToDo() {
+document.getElementById('lightboxdelay').click();
+    }
+window.onload = pause;
+</script> -->
+
+
     <!-- Navbar. -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" style ="max-width: 1500px; margin: 0 auto !important; float: none !important;">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -308,50 +344,77 @@ tagAnalyticsCNIL.CookieConsent.start();
 
     
 
-    <div class="row" id="my-header" style="background-image:url(images/smallmainpic.jpg);">
-      <div class="col-xs-8 col-xs-offset-4 col-sm-5 col-sm-offset-6">
-        <h1>Un hôtelier de votre quartier s'occupe de vos clés</h1>
+      <div class="row"  id="my-header" style="background-image:url(images/smallmainpic.jpg);text-align:center;">
+        <div class="col-xs-9 col-xs-offset-3 col-sm-5 col-sm-offset-6">
+          <h1>Un hôtelier de votre quartier s'occupe de vos invités</h1>
+        </div>
       </div>
-    </div>
 
-    <!-- Avantages mis en avant-->
-    <div class="container" style="text-align:center;">
+
+
+        <!-- Avantages mis en avant-->
+    <div class="container-fluid" style="text-align:center;">
       <div class="row">
         <div class="col-xs-12 col-sm-4">
           <div class="feature">
             <img src="images/smallkey.png" alt="Clés">
-            <h2>Réception ouverte 24/7</h2>
-            <!--<h4>Donnez-lui vos clés et partez l'esprit libre</h4>-->
-            <h4>Il est disponible non-stop pour vos invités</h4>
+            <h2>Un endroit sûr, ouvert 24/7</h2>
+            <!--<<h4>Obligé d'adapter son programme personnel pour pouvoir louer son appartement ? FAUX !!</h4>-->
+            <h4>Vous déposez vos clés à l'hôtel et vos invités les récupèrent à tout moment.</h4>
           </div>
         </div>
 
         <div class="col-xs-12 col-sm-4">
           <div class="feature">
             <img src="images/smallquartier.png" alt="Réceptionniste">
-            <h2>Service de proximité</h2>
+            <h2>Des services de proximité</h2>
             <!--<h4>Faites quelques pas et ça y est, vous êtes arrivés</h4>-->
-            <h4>Il se trouve à côté de chez vous et connait le quartier</h4>
+            <h4>Vos invités profitent des services de l'hôtel : consignes, petits-déjeuners...</h4>
           </div>
         </div>
 
         <div class="col-xs-12 col-sm-4">
           <div class="feature">
             <img src="images/smallconcierge.png" alt="Services complémentaires">
-            <h2>Profesionnel de l'accueil</h2>
-            <h4>Il conseille vos invités en français ou en anglais</h4>
+            <h2>Un professionnel de l'accueil</h2>
+            <h4>Il conseille vos invités sur la ville et le quartier en français ou en anglais.</h4>
           </div>
         </div>
 
       </div>
     </div>
 
+          <!-- Sondage-->
+      <div style="background-color:rgb(240,240,240);padding:45px;padding-top:30px;text-align:center;">
+        <h2>Gagnez notre reconnaissance éternelle</h2>
+        <h4>Aidez-nous à proposer les services les plus pertinents en répondant à ces sondages<br> Durée : 2 minutes chrono</h4>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-0">
+              <br><a href="https://docs.google.com/forms/d/1OlqwJlu-_h-O0YxmVfcVEilNUbLI0mu7s17YBobtrYA/viewform?usp=send_form" target=_blank style="font-size:18px">Sondage dédié aux hôtes</a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-sm-offset-0"> 
+              <br>
+              <a href="https://docs.google.com/forms/d/1t1fC_6yMle6HtA2sedPovacMpjeE2qUtlAc-3yKGnwo/viewform?usp=send_form" target=_blank style="font-size:18px">Sondage dédié aux voyageurs</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
 <!-- Inscription-->
-<div class="row" id="my-header" style="background-image:url(images/Paris_Night.jpg);padding-top:70px;">
-  <div class="container" style="text-align:center;">
+<div class="row" id="my-header" style="background-image:url(images/Paris_Night.jpg);padding-top:0px;">
+  <div class="container-fluid" style="text-align:center;">
     <div class="row">
-      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-        <h1 style="text-align:center; font-size:25px;">Sortie prévue à Paris mi-2015. <div style="height:3px"></div>Soyez un des premiers utilisateurs.<br></h1>
+      <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 hidden-xs">
+        <div style="height:70px"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
+        <h1 style="text-align:center; font-size:25px;">Sortie prévue à Paris courant 2015.<br>Soyez l'un des premiers utilisateurs.<br></h1>
       </div>
     </div>
 
@@ -366,7 +429,7 @@ tagAnalyticsCNIL.CookieConsent.start();
           'userName':'pijay',
           'formHash':'zzmk6f20ku2vuu',
           'autoResize':false,
-          'height':'130',
+          'height':'160',
           'async':true,
           'host':'wufoo.com',
           'header':'hide',
@@ -386,15 +449,15 @@ tagAnalyticsCNIL.CookieConsent.start();
 
     <!-- Ne râtez plus de locations pour des raisons logistiques-->
     <div class="details">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row" >
-          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+          <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0">
             <img src="images/photocles.jpg" alt="">
           </div>
 
-          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0" style="text-align:center;">
+          <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0" style="text-align:center;">
             <br>
-            <h2>Ne râtez plus de locations pour des raisons logistiques, profitez de nos prestations</h2>
+            <h2>Ne ratez plus de location pour des raisons logistiques</h2>
             <h4><a href="prixetservices.html#logistiques">En savoir plus</a></h4>
           </div>
         </div>
@@ -403,7 +466,7 @@ tagAnalyticsCNIL.CookieConsent.start();
 
       <!-- Vos invités vous apprécieront-->
       <div class="details" style="background-color:rgb(240,240,240);">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
             <div class="hidden-xs col-sm-6 col-sm-offset-0">
               <br>
@@ -411,11 +474,11 @@ tagAnalyticsCNIL.CookieConsent.start();
               <h4><a href="prixetservices.html#invites">En savoir plus</a></h4>
             </div>
 
-            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+            <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0">
               <img src="images/thankyou.jpg" alt="">
             </div>
 
-            <div class="col-xs-10 col-xs-offset-1 hidden-sm hidden-md hidden-lg">
+            <div class="col-xs-12 col-xs-offset-0 hidden-sm hidden-md hidden-lg">
               <br>
               <h2>Vos invités apprécieront les plus de nos services</h2>
               <h4><a href="prixetservices.html#invites">En savoir plus</a></h4>
@@ -427,13 +490,13 @@ tagAnalyticsCNIL.CookieConsent.start();
 
       <!-- Réservez en toute confiance-->
       <div class="details">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row" >
-            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+            <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0">
                 <img src="images/cartecredit.jpg" alt="">
               </div>
 
-            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+            <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0">
               <br>
               <h2>Réservez en toute confiance</h2>
               <h4><a href="prixetservices.html#confiance">En savoir plus</a></h4>
@@ -442,147 +505,12 @@ tagAnalyticsCNIL.CookieConsent.start();
         </div>
       </div>
 
-
-
-
-    <!--  <div class="container" style="text-align:center;">
-        <div class="row">
-          <div class="use">
-            <h1>Comment ça marche ?</h1>
-          </div>
-
-          <div class="col-xs-6 col-sm-4 col-sm-offset-2" >
-            <div class="use">
-              <h4><br>1. Vous sélectionnez un hôtel et réservez le service</h4>
-            </div>
-          </div>
-
-          <div class="col-xs-6 col-sm-4">
-            <div class="use">
-              <img src="images/ordinateur.png" alt="Email">
-            </div>
-          </div>
-        </div>
-      </div>
-
-     
-
-      <div class="container" style="text-align:center;">
-        <div class="row">
-          <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-            <div class="use"  style="border-bottom-style: solid; border-color: rgb(200,200,200); border-width:5px; padding:0px;">
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="container" style="text-align:center;">
-        <div class="row">
-          <div class="col-xs-6 col-sm-4 col-sm-offset-2">
-            <div class="use">
-              <img src="images/email.png" alt="Clés">
-            </div>
-          </div>
-
-          <div class="col-xs-6 col-sm-4">
-            <div class="use">
-              <h4><br>2. Vos invités reçoivent un email récapitulatif</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="container" style="text-align:center;">
-        <div class="row">
-          <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-            <div class="use"  style="border-bottom-style: solid; border-color: rgb(200,200,200); border-width:5px; padding:0px;">
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="container" style="text-align:center;">
-        <div class="row">
-          <div class="col-xs-6 col-sm-4 col-sm-offset-2">
-            <div class="use">
-              <h4><br>3. Vous déposez vos clés à l'hôtel quand vous le souhaitez</h4>
-            </div>
-          </div>
-
-          <div class="col-xs-6 col-sm-4">
-            <div class="use">
-              <img src="images/cles.png" alt="Hôtel">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container" style="text-align:center;">
-        <div class="row">
-          <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-            <div class="use"  style="border-bottom-style: solid; border-color: rgb(200,200,200); border-width:5px; padding:0px;">
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="container" style="text-align:center;">
-        <div class="row">
-          <div class="col-xs-6 col-sm-4 col-sm-offset-2">
-            <div class="use">
-              <img src="images/invites.png" alt="Ordinateur">
-            </div>
-          </div>
-
-          <div class="col-xs-6 col-sm-4">
-            <div class="use">
-              <h4><br>4. Vos invités peuvent récupérer vos clés à tout moment</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-      <div class="container" style="text-align:center;">
-        <div class="row">
-          <div class="use">
-            <h1>Quel prix ?</h1>
-          </div>
-          
-            <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
-              <div class="prix">
-                <h4 style="font-size:40px;">10,99 €</h4>
-                <div style="height:7px"></div>
-                <h4 style="border-bottom-style: solid; border-color: rgb(200,200,200); border-width:5px;">Par gestion de clés<br><br><br></h4>
-              
-              <h4 style="line-height:40px;padding:10px;color:rgb(252,252,252);">
-                Sans engagement<br>
-                Par carte ou avec votre compte Paypal
-              </h4>
-            </div>
-
-            <div style="line-height:20px;"><br>
-<div class="btn-group btn-group-lg"><button type="button" class="btn btn-default" id="boutton"><a href="reserver.html" style="color:rgb(252,252,252)">Réserver</a></button></div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <br><br>-->
-
   
     <div id="my-footer">
-       <div class="container">
+       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-6 col-xs-offset-0 col-sm-4 col-sm-offset-0">
-            <ul style="list-style-type:none;">
+            <ul style="list-style-type:none;padding:0px; margin:0px">
               <!--<li><a href="#">Equipe</a></li>-->
               <li><a href="mentionslegales.html">Mentions légales</a></li>
             </ul>
@@ -590,33 +518,32 @@ tagAnalyticsCNIL.CookieConsent.start();
           </div>
         
           <div class="col-xs-6 col-xs-offset-0 col-sm-4 col-sm-offset-0">
-            <ul style="text-align:center;list-style-type:none;">
-              <li>Suivez-nous sur :</li>
+              Suivez-nous sur :
               <div style="height:10px"></div>
-              <ul class="list-inline" style="text-align:center;">
-                <li><a href="https://www.facebook.com/pages/At-the-corner/977205032290313" target=_blank><i class="fa fa-facebook" style-"font-size:30px"></i></a></li><li></li>
-                <li><a href="https://twitter.com/AttheCornerFr" target=_blank style-"font-size:30px"><i class="fa fa-twitter"></i></a></li><li></li>
-                <li><a href="https://plus.google.com/u/0/b/113596215671857215006/113596215671857215006/about" target=_blank><i class="fa fa-google-plus" style-"font-size:30px"></i></a></li><br><br>
+              <ul class="list-inline" style="text-align:center;padding:0px; margin:0px">
+                <li><a href="https://www.facebook.com/pages/At-the-corner/977205032290313" target=_blank><i class="fa fa-facebook"></i></a></li><li></li>
+                <li><a href="https://twitter.com/AttheCornerFr" target=_blank><i class="fa fa-twitter"></i></a></li><li></li>
+                <li><a href="https://plus.google.com/u/0/b/113596215671857215006/113596215671857215006/about" target=_blank><i class="fa fa-google-plus" ></i></a></li>
               </ul> 
-            </ul>
+              <div style="height:30px"></div>
           </div>
 
-          <div class="col-xs-6 col-xs-offset-0 col-sm-4 col-sm-offset-0">
-           <ul style="list-style-type:none;">
+          <div class="col-xs-12 col-xs-offset-0 col-sm-4 col-sm-offset-0">
+           <ul style="list-style-type:none;padding:0px; margin:0px">
               <li>Contactez-nous : </li>
               <div style="height:10px"></div>
               <li><a href="mailto:contact@atthecorner.fr">contact@atthecorner.fr</a></li>
               <li>06 89 52 88 73</li>
             </ul>
           </div>
+        </div>
 
 
-          <div class="col-xs-6 col-xs-offset-0 col-sm-6 col-sm-offset-3">
-            <br>
-            <ul style="list-style-type:none;">
-              <div style="height:10px"></div>
-              <li>2015 © At The Corner</li>
-            </ul>
+        <div class="row">
+          <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-3">
+            <div style="height:40px"></div>
+              2015 © At The Corner
+            </div>
           </div>
         </div>
     </div>
