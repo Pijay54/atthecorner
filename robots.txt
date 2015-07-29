@@ -1,0 +1,7 @@
+User-agent: *
+Sitemap: http://www.atthecorner.fr/sitemap.xml
+Disallow: /images/
+Disallow: /404.html
+Disallow: /mentionslegales.html
+Disallow: /contact.html
+Disallow: /faq.html

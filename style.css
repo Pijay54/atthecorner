@@ -19,6 +19,12 @@ h6 {
   color:#00918b;
 }
 
+.ensavoirplus{
+  text-align:right;
+  font-size:17px;
+  color:#00918b;
+}
+
 body{
   margin: 0px;
   color: rgb(50,50,50);
@@ -31,6 +37,34 @@ body{
   border-color: grey;
   border-width:1px;
   box-shadow: 0px 8px 12px #aaa;
+}
+
+.content{
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+  width:400px;
+}
+
+.content h1{
+  font-size: 20px;
+    padding:10px;
+    margin: 0px;
+  line-height : 20px;
+}
+
+ul.simple{
+width: 100% ;
+
+}
+
+ul.simple li {
+display:block;
+width : 50%;
+float:left;
+}
+
+ul.simple li[float="left"] + li {
+float:none;
 }
 
 h1{
@@ -55,6 +89,7 @@ h3{
 
 h4{
   line-height: 20px;
+  color:rgb(15,15,15);
 }
 
 h5{
@@ -67,7 +102,7 @@ p{
 }
 
 a:hover{
-  color:#FF4024 ;
+  color:#FF4024;
   text-decoration:none;
 }
 
@@ -75,24 +110,53 @@ a{
   color:#00918b ;
 }
 
+.commun{
+  padding:60px;
+}
+
+.commun-gris{
+  padding:60px;
+  background-color:rgb(245,245,245);
+}
+
+.commun h2{
+  /*padding-bottom:20px;*/
+  text-align:center;
+}
+
+.commun-gris h2{
+  /*padding-bottom:20px;*/
+  text-align:center;
+}
+
+.commun h4{
+  text-align:center;
+}
+
+.commun-gris h4{
+  text-align:center;
+}
+
 .details{
-  padding:40px;
   text-align:center;
 }
 
 .details img{
-  border-style: solid;
+  /*border-style: solid;
   border-radius: 10px;
-  border-color: grey;
+  border-color: #6b8a94;
   border-width:2px;
-  box-shadow: 0px 8px 12px #aaa;
-  margin:5px;
-    max-width:100%;
+  box-shadow: 0px 8px 12px #aaa;*/
+  margin: 0px;
+  padding:0px;
+  max-width:400px;
+  width:90%;
   height:auto;
+  text-align:center;
 }
 
 #special{
-background-color:#ff6524; 
+background-color:#00918b; 
 color:rgb(252,252,252);
 box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
@@ -112,6 +176,68 @@ box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   margin:0px;
 }
 
+
+.partenaire{
+  vertical-align: middle;
+  background-size: cover;
+  height: 450px;
+  padding-top: 320px;
+  margin:0px;
+  text-align:center;
+}
+
+.partenaire h1{
+  margin:0px;
+  color:white;
+  font-size: 30px;
+  text-align: center;
+  padding-top:10px;
+  padding-bottom:0px;
+
+}
+.partenaire h2{
+  margin:0px;
+  padding-top:0px;
+  padding-bottom:30px;
+  color:white;
+  font-size: 22px;
+  text-align: center;
+}
+
+.partenaire a{
+  color:white;
+}
+
+.partenaire a:hover{
+  color:#FF4024 ;
+  text-decoration:none;
+}
+
+#boutton{
+  background-color: #ff6524;
+  padding:12px;
+  font-size:25px;
+    border-radius:5px;
+
+  /**box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);**/
+}
+
+
+.btn{
+  background-color: #ff6524;
+  padding:12px;
+  font-size:25px;
+  /**box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);**/
+}
+
+.btn:hover{
+  background-color: #FF4024;
+}
+
+#boutton:hover{
+  background-color: #FF4024;
+}
+
 #my-header h1{
   color:rgb(252,252,252);
   font-size: 30px;
@@ -119,14 +245,11 @@ box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   padding:0px;
 }
 
-.feature{
-  padding: 30px;
-}
-
 .feature img{
   padding: 5px;
-  max-width:100%;
+  /*max-width:100%;*/
   height:auto;
+  width:100px;
 }
 
 .use{
@@ -179,11 +302,11 @@ box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   padding-bottom:20px;
   text-align:center; 
   font-size:30px; 
-  border-style: solid;
+  /*border-style: solid;
   border-radius: 10px;
   border-color: grey;
   border-width:2px;
-  box-shadow: 0px 8px 12px #aaa;
+  box-shadow: 0px 8px 12px #aaa;*/
   width: 50%;
   margin-left: 25%;
 }
@@ -191,13 +314,45 @@ box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 .prix h1{
   font-size: 35px;
   font-color:rgb(252,252,252);
+    color:#FF4024;
+
 }
 
+.price{
+  color:#FF4024;
+  font-size:22px;
+  padding-top:0px;
+  margin-top:0px;
+  padding:10px;
+  text-align:center;
+}
+
+
+.faq h1{
+  font-size: 18px;
+  line-height: 20px;
+  padding:40px;
+  padding-bottom:0px;
+  padding-top:5px;
+  color:#ff6524;
+  text-align: left;
+}
+
+.faq h2{
+  font-size: 15px;
+  line-height: 20px;
+  padding:0px;
+  color:rgb(35,35,35);
+  padding:40px;
+  padding-top:0px;
+  padding-bottom:0px;
+  text-align:left;
+}
+
+
+
 #my-footer{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 0px;
-  padding-right: 0px;
+padding:40px;
   margin:0px;
   background: #00918b;
   text-align:center;
@@ -220,7 +375,6 @@ box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 
 .navbar{
 background-color: rgb(252,252,252);
-color: red;
 font-size: 17px;
 box-shadow: 0px 2px 15px #aaa ;
 }
@@ -231,6 +385,10 @@ box-shadow: 0px 2px 15px #aaa ;
 
 #navbar a:hover{
   color: #FF4024;
+}
+
+#navbar a{
+  color: #00918b;
 }
 
 form div + div {
@@ -262,29 +420,14 @@ button {
   padding:10px;
 }
 
-#boutton
-{
-  background-color: #ff6524;
-  padding-top:15px;
-  padding-bottom:15px;
-  padding-left:10px;
-  padding-right:10px;
-  font-size:20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}
-
-#boutton:hover
-{
-  background-color: #FF4024;
+.boutton a{
+color:white;
 }
 
 #carte{
   height:100%; 
   margin:0px; 
   padding:0px;
-}
-
-.subsub{
 }
 
 #map-canvas {

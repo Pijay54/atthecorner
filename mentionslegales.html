@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AT THE CORNER</title>
+    <title>Mentions légales et conditions générales</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+
+            <link rel="icon" type="image/png" href="images/favicon.png" />
+<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
     
     <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Open+Sans:700italic,400' rel='stylesheet' type='text/css'>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -20,7 +23,7 @@
     
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
 
-    <!--Google Analytics-->
+<!--Google Analytics-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -67,17 +70,20 @@ tagAnalyticsCNIL.CookieConsent = function() {
         var div = document.createElement('div');
         div.setAttribute('id','cookie-banner');
         div.setAttribute('width','70%');
+
         // Le code HTML de la demande de consentement
         div.innerHTML =  '<div style="background-color:#fff;text-align:center;padding-top:60px;padding-bottom:10px;font-size:12px;\
         border-bottom:1px solid #eeeeee;" id="cookie-banner-message" align="center">Ce site utilise Google\
         Analytics. En continuant à  naviguer, vous nous autorisez à déposer un cookie à des fins de mesure\
-        d\'audience. <a href="javascript:tagAnalyticsCNIL.CookieConsent.showInform()" \
-        style="text-decoration:underline;"> En savoir plus ou s\'opposer</a>.</div>';
-        // Vous pouvez modifier le contenu ainsi que le style
-        // Ajoute la bannière juste au début de la page 
-        bodytag.insertBefore(div,bodytag.firstChild); 
+        d\'audience. <button style="text-decoration:underline;color:#00918b;" name="cancel" onclick="tagAnalyticsCNIL.CookieConsent.hideInform()"\
+        >Fermer </button><a href="javascript:tagAnalyticsCNIL.CookieConsent.showInform()" \
+        style="text-decoration:underline;color:black;"> En savoir plus</a></div>';
+                        bodytag.insertBefore(div,bodytag.firstChild); 
         document.getElementsByTagName('body')[0].className+=' cookiebanner';    
         createInformAndAskDiv();
+        // Vous pouvez modifier le contenu ainsi que le style
+        // Ajoute la bannière juste au début de la page 
+
      }
           
           
@@ -172,11 +178,10 @@ tagAnalyticsCNIL.CookieConsent = function() {
         left:50%; margin-top:0px; margin-left:-150px; z-index:100000; opacity:1" id="inform-and-consent">\
         <div><span><b>Les cookies Google Analytics</b></span></div><br><div>Ce site utilise  des cookies\
         de Google Analytics,    ces cookies nous aident à  identifier le contenu qui vous interesse le plus\
-        ainsi qu\'à  repérer certains dysfonctionnements. Vos données de navigations sur ce site sont\
-        envoyées à  Google Inc</div><div style="padding :10px 10px;text-align:center;"><button\
+        ainsi qu\'à  repérer certains dysfonctionnements.</div><div style="padding :10px 10px;text-align:center;"><button\
         style="margin-right:50px;text-decoration:underline;" name="S\'opposer" onclick="tagAnalyticsCNIL.CookieConsent.gaOptout();\
         tagAnalyticsCNIL.CookieConsent.hideInform();" id="optout-button" >S\'opposer</button>\
-        <button style="text-decoration:underline;" name="cancel" onclick="tagAnalyticsCNIL.CookieConsent.hideInform()"\
+        <button style="text-decoration:underline;color:#00918b;" name="cancel" onclick="tagAnalyticsCNIL.CookieConsent.hideInform()"\
         >Accepter</button></div></div>';
         // Ajoute la bannière juste au début de la page 
         bodytag.insertBefore(div,bodytag.firstChild); 
@@ -286,7 +291,7 @@ tagAnalyticsCNIL.CookieConsent.start();
   
   <body>
     <!-- Navbar. -->
-    <nav class="navbar navbar-default navbar-fixed-top" style ="max-width: 1500px; margin: 0 auto !important; float: none !important;">
+    <nav class="navbar navbar-default navbar-fixed-top" style ="max-width: 1500px; margin: 0 auto !important; float: none !important;padding-left:30px;padding-right:30px;">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -295,52 +300,79 @@ tagAnalyticsCNIL.CookieConsent.start();
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><font color="#FF4024">AT THE CORNER</font></a>
+          <a class="navbar-brand" href="index.html"><img style="position:fixed;bottom:10px;" src="images/at-the-corner.png" alt="AT THE CORNER"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <!--<li><a id="special" href="reserver.html" style="color:rgb(252,252,252)">Réserver</a></li>-->
-            <li><a href="prixetservices.html">Prix et Services</a></li>
-            <li><a href="partenaire.html">Partenaires</a></li>
+            <li><a id="special" href="reserver.html" style="color:rgb(252,252,252)">Réserver</a></li>
+            <li><a href="prixetservices.html">Services et tarifs</a></li>
+            <li><a href="securite.html">Securité</a></li>
+            <li><a href="invites.html">I am a guest</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
     
-
-    <div style="height:50px"></div>
-    <div style="padding:20px">
-      <h1>Mentions légales</h1>
+<div class="commun">
+      <h1>Mentions légales et CGU</h1>
       <h2>1. Collecte de données personnelles</h2>
       <p>
 Pierre-Julien Crovisier<br>
 « Les informations recueillies font l’objet d’un traitement informatique destiné à vous recontacter pour vous proposer nos services. Les destinataires des données sont les associés du projet At The Corner.<br>
-Conformément à la loi « informatique et libertés » du 6 janvier 1978 modifiée en 2004, vous bénéficiez d’un droit d’accès et de rectification aux informations qui vous concernent, que vous pouvez exercer en vous adressant à Pierre-Julien Crovisier, pj.crovisier@me.com, 9 rue Eugène Caron 92400 Courbevoie.<br>
+Conformément à la loi « informatique et libertés » du 6 janvier 1978 modifiée en 2004, vous bénéficiez d’un droit d’accès et de rectification aux informations qui vous concernent, que vous pouvez exercer en vous adressant à Pierre-Julien Crovisier, contact@atthecorner.fr, 9 rue Eugène Caron 92400 Courbevoie.<br>
 Vous pouvez également, pour des motifs légitimes, vous opposer au traitement des données vous concernant.<br>
       </p>
+          <div style="height:50px"></div>
+
 
       <h2>2. Copyright des images</h2>
       <p>
-        <ul>
-          <li>Façade d'hôtel, Pierre-Julien Crovisier, Tous droits réservés</li>
-          <li>Credit cards, Sean MacEntee, Creative Common</li>
-          <li>Keys, Moyan Brenn, Creative Common</li>
-          <li>Thank You, Geralt, Creative Common</li>
-          <li>City, Thibault Geffroy, Creative Common,</li>
-          <li>Key, William J. Salvador, Creative Common</li>
-          <li>Recptionist, Clockwise, Creative Common</li>
-          <li>Computer, Edward Boatman, Creative Common</li>
-          <li>Email, Martha Ormiston, Creative Common</li>
-          <li>People, useiconic.com, Creative Common</li>
-          <li>Paris Night, Benh Lieu Song , GFDL</li>
-        </ul>
         <a href="https://creativecommons.org/licenses/by/2.0/legalcode" target=_blank>Lien vers la licence Creative Common</a><br>
-        <a href="http://www.gnu.org/copyleft/fdl.html" target=_blank>Lien vers la licence GFDL</a>
+        <ul>
+          <li>Accueil : Façades, Pierre-Julien Crovisier, Tous droits réservés</li>
+          <li>Accueil : <a href="https://thenounproject.com/term/map/23116/">Map</a>, Noah Mormino, Creative Common</li>
+          <li>Accueil : <a href="https://thenounproject.com/term/alarm-clock/4046/">Alarm-Clock</a>, Samuel Q. Green, Creative Common</li>
+          <li>Accueil : <a href="http://zita952.deviantart.com/art/my-fingers-341806127">My fingers</a>, Zita952, Creative Common</li>
+          <li>Accueil : <a href="https://www.flickr.com/photos/wilhei/2039096034/in/photolist-62Loow-abxBej-hDUwvm-6jwUxU-47bUdb-a7Bd7j-a6EA1M-9Nkirx-7Lt8qg-fh2s5b-iZ1v7V-eKabrA-7TQXVU-eRATxj-a4Jszz-fwGSAH-fwGPxV-6bRsKj-5PTot8-fiCcCE-ivcBhA-qFbgbZ-9oWURb-oi9Zha-nCsmvb-9NkpCn-fPigQT-7A3P6w-7zZ1uM-9BAAXQ-4yAfS8-7UVnD8-9DGuEh-4yAg9x-6Wfnsr-dVbHYW-9m17S5-4zx1EQ-dV69N4-4LaZzi-9QeNDz-a6EffF-aQgCUt-7p1f5C-q6CYYD-dMG4Qh-8aqpyN-ebzcjN-9no5Q9-dDeBEr">Schluessel</a>, Willi Heidelbach, Creative Common</li>
+          <li>Prix et services : <a href="https://www.flickr.com/photos/aigle_dore/2781302649/in/photolist-jDjbM-7vbuDn-5VjMoa-5MRfWJ-6pD1Tz-5Vp7GN-ntiymE-62n5mh-5eLUnX-nrc1nc-rRiVEf-oSGsuP-nMxFFX-nLbo77-5mXynU-5Ldnzm-u5s1m-6aFDju-Pa9yp-ovyT7G-qBeufZ-84btbi-6ZKaVd-rc59bw-9nzdKB-hoKpmh-e4WDQ7-ndhfWM-bh4AGB-8mNuwW-o79KAj-pSkHnq-9TH6ST-7WX8ss-b58ZBM-ozeam4-qpTS6Y-nMxSER-jkUNSa-jnDBtq-qNNYRw-5E2411-29KvKK-nVawi1-4L7MJE-e2gVHt-doCfyd-aXMzDM-4FyEQ7-333pUJ">Keys</a>, Moyan Brenn, Creative Common</li>
+          <li>Prix et services : <a href="https://www.flickr.com/photos/wwworks/4759535950/in/photolist-8fzSdE-7pCnCU-9ucNwA-fEokxG-e4ZaJQ-6K41qv-77L35X-eeQ9qA-p7WzAm-4BCrGK-77ToxA-9mn3LR-77Kyuc-8DCJqq-4DpfcG-asPSBn-pVE349-77HFWx-9yc8LC-4YCNoQ-7vB8k5-5YsXud-77KoLx-77Nbeu-jhKaT6-7ox4q6-7q7Nfv-5rTABo-5rTsRb-5FGrDy-77LnCe-7CwYWX-77PAXS-77PfnH-k1Wjhe-naZfS-pfZAQX-nM58RD-4SL4ve-owVDZp-77KTb4-8W5sxn-77Pck6-5rTnvj-62hN2y-7itZvL-8w4FKU-72YfW-nTrHFv-asALA3 ">Thank you note for every language</a>, Woodleywonderworks, Creative Common</li>
+          <li>Sécurité : <a href="https://www.flickr.com/photos/davideoliva/7112894143/in/photolist-rhknDp-p75Fo3-hhkc6S-dBkyZA-fLUbKZ-ou2UfJ-fcAAfG-co3WwY-cZQrF9-dUyvJ8-fbMrSv-djBvGG-cHYa7m-7ZE3VU-7PGx6x-816Q1p-bQxrBV-p6oa6T-btn71h-fWL9uY-btn39S-bGgTQr-bGgR5k-idSXQo-8qdFzD-8qgRaW-aAYtCo-dVmnjA-nmkRWf-nmkTfZ-nCQ8N9-nCxMgB-nCQahS-nCQtjz-fToUac-6W5sTK-78TycS-cURf3S-7ZASh4-djBwmC-9emWHH-chMkbd-fWKDNZ-fWKVtf-fWL4CR-cPM41f-r4S1jK-qMipqm-9CusNu-99eQ6s">Pont des Arts</a>, David Oliva, Creative Common</li>
+          <li>Securité : <a href="https://thenounproject.com/term/home/45646/">Home</a>, useiconic.com, Creative Common</li>
+          <li>Securité : <a href="https://thenounproject.com/term/shield/3147/">Shield</a>, Guido Haak, Creative Common</li>
+          <li>Securité : <a href="https://thenounproject.com/term/password/43118/">Password</a>, Dan Hetteix, Creative Common</li>
+          <li>Securité : <a href="https://thenounproject.com/term/server/29558/">Server</a>, Konstantin Velichko, Creative Common</li>
+          <li>Accueil : <a href="https://thenounproject.com/term/city/1566/">City</a>, Thibault Geffroy, Creative Common</li>
+          <li>Accueil, Services et prix, Partenaire : <a href="https://thenounproject.com/term/key/2288/">Key</a>, William J. Salvador, Creative Common</li>
+          <li>Accueil, Services et prix, Sécurité : <a href="https://thenounproject.com/term/receptionist/7064/">Receptionist</a>, Clockwise, Creative Common</li>
+          <li>Accueil, Services et prix, Invites : <a href="https://thenounproject.com/term/computer/115/"> Computer</a>, Edward Boatman, Creative Common</li>
+          <li>Accueil, Services et prix, Invites : <a href="https://thenounproject.com/term/email/15543/">Email</a>, Martha Ormiston, Creative Common</li>
+          <li>Accueil, Services et prix, Invites : <a href="https://thenounproject.com/term/people/45485/">People</a>, useiconic.com, Creative Common</li>
+          <li>Réserver : <a href="https://thenounproject.com/term/location/1832/">Location</a>, Daniele Marucci, Creative Common</li>
+          <li>Invités : Façade d'hôtel, Pierre-Julien Crovisier, Tous droits réservés</li>
+          <li>Invités : <a href="https://thenounproject.com/search/?q=ticket&i=6358">Ticket</a>, Dani Rolli, Creative Common</li>
+          <li>Invités : <a href="https://thenounproject.com/search/?q=croissant&i=84577">Croissant</a>, gayatri, Creative Common</li>
+          <li>Invités : <a href="https://thenounproject.com/search/?q=cup&i=29375">Coffee</a>, Diego Naive, Creative Common</li>
+          <li>Invités : <a href="https://thenounproject.com/search/?q=suitcase&i=8175">Suitcase</a>, Shane Miller, Creative Common</li>
+          <li>FIAP : <a href="http://pixabay.com/p-104031/?no_redirect">Bagages</a>, JamesDeMers, Creative Common</li>
+          <li>Partenaire : <a href="http://commons.wikimedia.org/wiki/File:Georges_Panayotis.png">Georges Panayotis</a>, MKG - Hospitality ON, Creative Common</li>
+          <li>Partenaire : <a href="https://thenounproject.com/term/ticket/6358/">Ticket</a>, Dani Rolli, Creative Common</li>
+          <li>Partenaire : <a href="https://thenounproject.com/term/people/35891/">People</a>, Benjamin Harlow, Creative Common</li>
 
+
+
+        </ul>
       </p>
-    </div>
+          <div style="height:50px"></div>
 
+            <h2>3. Conditions d'utilisation</h2>
+            <p><br>
+Les conditions d'utilisation seront publiées en même temps que la prochaine version du site internet permettant notamment la réservation de service
+<br></p>
+
+    </div>
+</div>
 
     <noscript>
       <p>Attention : </p>
@@ -351,16 +383,17 @@ Vous pouvez également, pour des motifs légitimes, vous opposer au traitement d
 
     <div id="my-footer">
        <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-6 col-xs-offset-0 col-sm-4 col-sm-offset-0">
-            <ul style="list-style-type:none;padding:0px; margin:0px">
-              <!--<li><a href="#">Equipe</a></li>-->
-              <li><a href="#">Mentions légales</a></li>
+            <div class="row">
+          <div class="col-xs-6 col-xs-offset-0 col-sm-6 col-sm-offset-0">
+            <ul style="list-style-type:none;padding:0px; margin:0px;">
+                <li><a href="partenaire.html">Devenir partenaire</a></li>
+                <li><a href="faq.html">Questions et réponses</a></li>
             </ul>
             <br>  
           </div>
+
         
-          <div class="col-xs-6 col-xs-offset-0 col-sm-4 col-sm-offset-0">
+          <div class="col-xs-6 col-xs-offset-0 col-sm-6 col-sm-offset-0">
               Suivez-nous sur :
               <div style="height:10px"></div>
               <ul class="list-inline" style="text-align:center;padding:0px; margin:0px">
@@ -368,27 +401,11 @@ Vous pouvez également, pour des motifs légitimes, vous opposer au traitement d
                 <li><a href="https://twitter.com/AttheCornerFr" target=_blank><i class="fa fa-twitter"></i></a></li><li></li>
                 <li><a href="https://plus.google.com/u/0/b/113596215671857215006/113596215671857215006/about" target=_blank><i class="fa fa-google-plus" ></i></a></li>
               </ul> 
-              <div style="height:30px"></div>
-          </div>
-
-          <div class="col-xs-12 col-xs-offset-0 col-sm-4 col-sm-offset-0">
-           <ul style="list-style-type:none;padding:0px; margin:0px">
-              <li>Contactez-nous : </li>
-              <div style="height:10px"></div>
-              <li><a href="mailto:contact@atthecorner.fr">contact@atthecorner.fr</a></li>
-              <li>06 89 52 88 73</li>
-            </ul>
           </div>
         </div>
-
-
-        <div class="row">
-          <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-3">
-            <div style="height:40px"></div>
-              2015 © At The Corner
-            </div>
-          </div>
         </div>
+        <div style="height:50px"></div>
+        <a href="#">Mentions légales et CGU</a> - 2015 © At The Corner
     </div>
 
     <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->

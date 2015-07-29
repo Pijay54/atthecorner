@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>At The Corner, un prix mini pour un service professionnel</title>
-    <meta name="description" content="Réservez en toute confiance et vos invités apprécieront les plus de nos services" />
-    
+    <title>At The Corner, un hôtelier de votre quartier s'occupe de vos clés</title>
+    <meta name="description" content="" />
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,16 +23,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script type="text/javascript">
-function ouvrirFermerSpoiler(div) {
-        var divContenu = div.getElementsByTagName('div')[0];
-        if(divContenu.style.display == 'block') {
-            divContenu.style.display = 'none';
-        } else {
-            divContenu.style.display = 'block';
-        }
-    }
-</script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+    <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
 
 <!--Google Analytics-->
 <script>
@@ -299,38 +291,59 @@ tagAnalyticsCNIL.CookieConsent = function() {
 tagAnalyticsCNIL.CookieConsent.start();
 </script>
 
+    <script>
+
+
+      function initialize() {
+
+
+
+        var mapOptions = {
+                zoom: 15,
+                maxZoom:19,
+                minZoom:12,
+                center: new google.maps.LatLng(
+48.897818, 2.246219),
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                streetViewControl: false,
+                panControl: false,
+                mapTypeControl: false,
+                scrollwheel: false
+        };
+
+
+
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+          mapOptions);
+
+          
+        var image = {  
+          url:        'images/marker2.png',
+          size:       new google.maps.Size(30, 30),
+          scaledSize: new google.maps.Size(30, 30)
+        };
+
+
+
+//At The Corner
+          var marqueur2 = new google.maps.Marker({
+          position: new google.maps.LatLng(
+48.897818, 2.246219
+),
+          map: map,
+          title: 'At The Corner',
+          icon: image
+        });
+
+      };
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+     </script>
 
   </head>
+  
   <body>
-<!-- Popup -->
-    <script src="http://d2g9qbzl5h49rh.cloudfront.net/static/feedback2.js?3.2.6907" type="text/javascript">
-var JFL_51186056397361 = new JotformFeedback({
-formId:'51186056397361',
-base:'http://jotformeu.com/',
-windowTitle:'Formulaire de collecte d\'email',
-background:'#FFA500',
-fontColor:'#FFFFFF',
-type:1,
-height:400,
-width:500
-});
-</script>
-<a id="lightboxdelay" class="lightbox-51186056397361"></a>
-
-
-<script language="JavaScript">
-var delayseconds = 10;
-    function pause() {
-    myTimer = setTimeout('whatToDo()', delayseconds * 1000)
-    }
-   function whatToDo() {
-document.getElementById('lightboxdelay').click();
-    }
-window.onload = pause;
-</script>
-
-
-
     <!-- Navbar. -->
     <nav class="navbar navbar-default navbar-fixed-top" style ="max-width: 1500px; margin: 0 auto !important; float: none !important;padding-left:30px;padding-right:30px;">
       <div class="container-fluid">
@@ -341,274 +354,55 @@ window.onload = pause;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="index.html"><img style="position:fixed;bottom:10px;" src="images/at-the-corner.png" alt="AT THE CORNER"></a>
+          <a class="navbar-brand" href="index.html"><img style="position:fixed;bottom:10px;" src="images/at-the-corner.png" alt="AT THE CORNER"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a id="special" href="reserver.html" style="color:rgb(252,252,252)">Réserver</a></li>
-            <li><a href="#"><font color="#FF4024">Services et tarifs</font></a></li>
+            <li><a href="prixetservices.html">Services et tarifs</a></li>
             <li><a href="securite.html">Securité</a></li>
             <li><a href="invites.html">I am a guest</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#"><font color="#FF4024">Contact</font></a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-
-    <!-- Espace pour Navbar-->
-    <div style="height:50px"></div>
+            <div style="height:50px"></div>
 
 
-    <div class="commun">
-      <div class="details" style="text-align:left;" id="logistiques">
-        <h3>Ne ratez plus de locations pour des raisons&nbsp;logistiques, profitez&nbsp;de&nbsp;nos&nbsp;prestations<br><br></h3>
+    <script type="text/javascript" src="http://form.jotformeu.com/jsform/51184031463346"></script>
 
-      <div class="container-fluid">
-        <div class="row" >
-          <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0" style="text-align:center;">
-            <img src="images/photocles2.jpg" alt="Gestion de clés">
-            <br><br>
-          </div> 
-
-          <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0">
-            <h5><ul>
-              <li>Gestion de clés disponible 24h/24 et 7j/7</li>
-              <li>A proximité de chez vous</li>
-              <li>Réservation jusqu'à 5 minutes avant le dépôt de vos clés</li>
-              <li>Assurées par des professionels de l'accueil parlant plusieurs langues</li>
-            </ul></h5>
-          </div>
-        </div> 
-      </div>
-    </div> 
-    </div>
-
-    <!-- Vos invités apprécieront-->
     <div class="commun-gris">
-      <div class="details" id="invites" style="text-align:left" >
-        <h3>Vos invités apprécieront les plus de nos&nbsp;services<br><br></h3>
-
-        <div class="container">
+        <h3>Autres moyens de nous contacter<br><br></h3>
+    <div class="details">
+        <div class="container-fluid">
           <div class="row">
-          <div class="col-xs-12 col-xs-offset-0 hidden-sm hidden-md hidden-lg" style="text-align:center;">
-            <img src="images/merci.jpg" alt="Conciergerie">
-            <br><br>
-          </div>
-
-          <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0">
-            <h5><ul>
-              <li>Liberté dans les horaires d'arrivée et de départ</li>
-              <li>Gratuité du service de gestion de clés pour vos invités</li>
-              <li>Accueil par un connaisseur du quartier</li>
-              <li>Services complémentaires proposés par l'hôtel : stockage de bagages, petits-déjeuners...</li>
-            </ul></h5>
-          </div>
-
-          <div class="hidden-xs col-sm-6 col-sm-offset-0" style="text-align:center;">
-            <img src="images/merci.jpg" alt="Meilleures recommandations">
-            <br><br>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-
-<!-- Comment coûte un service At The Corner ?-->
-    <div class="commun">
-            <h3>Un prix simple et unique<br><br></h3>
-        
-              <div class="prix">
-                <h4 style="font-size:40px;color:rgb(250,250,250);">10 €</h4>
-                <div style="height:5px;"></div>
-                <!--<h4 style="border-bottom-style: solid; border-color: grey; border-width:2px;">Par gestion de clés<br><br><br></h4>-->
-                <h4 style="color:rgb(250,250,250);">Par gestion de clés (Check-In ou Check-Out)<br></h4>
-
-              <div style="line-height:20px;"><br>
-                <div style="height:25px;"></div>
-
-            <div style="text-align:center"><a id="boutton" style="cursor:pointer;color:white;text-decoration:none;" href="reserver.html">Réserver</a>
-</div>                <div style="height:25px;"></div>
-              
-          </div>
-        </div>
-        <div style="height:20px"></div>
-      </div>
-      </div>
-
-    <!-- L'arrivée-->
-    <div class="commun-gris" id="services">
-      <h3>Les services de gestion&nbsp;de&nbsp;clés en&nbsp;détails<br><br></h3>
-      <div class="container-fluid" style="text-align:center;">
-        <div class="spoiler" onclick="ouvrirFermerSpoiler(this);">
-          <h6><a>Check-In : Comment se déroule le service lors de l'arrivée de mes&nbsp;invités&nbsp;?</a></h6>    
-            <div class="contenuSpoiler">
-
-                <div class="use" style="padding-right:10%;padding-left:10%; padding-top:0px;">
-                  <h4><br>Vous avez loué votre appartement grâce à votre site préféré : Airbnb, Sejourning, MorningCroissant, HouseTrip, Misterbnb... et vous venez de remarquer que vous ne pourrez pas être présent pour remettre les clés à vos invités. Pas de problème, At The Corner est là.</h4>
-                </div>   
-
-              <div class="row">         
-                <div class="col-xs-6 col-sm-4 col-sm-offset-2" >
-                  <div class="use">
-                    <h4><br>1. Vous sélectionnez un hôtel et réservez le service</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4">
-                  <div class="use">
-                    <img src="images/ordinateur.png" alt="Réservation d'un service de gestion de clés">
-                  </div>
-                </div>
-              </div>     
-              <div class="row">
-                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                  <div class="use"  style="border-bottom-style: solid; border-color: rgb(200,200,200); border-width:5px; padding:0px;"></div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-xs-6 col-sm-4 col-sm-offset-2">
-                  <div class="use">
-                    <img src="images/email.png" alt="Envoi des informations par email">
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4">
-                  <div class="use">
-                    <h4><br>2. Vos invités reçoivent un email récapitulatif</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                  <div class="use" style="border-bottom-style: solid; border-color: rgb(200,200,200); border-width:5px; padding:0px;"></div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-xs-6 col-sm-4 col-sm-offset-2">
-                  <div class="use">
-                    <h4><br>3. Vous déposez vos clés à l'hôtel quand vous le souhaitez</h4>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-4">
-                  <div class="use">
-                    <img src="images/cles.png" alt="Dépôt des clés à l'hôtel">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                  <div class="use"  style="border-bottom-style: solid; border-color: rgb(200,200,200); border-width:5px; padding:0px;"></div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-xs-6 col-sm-4 col-sm-offset-2">
-                  <div class="use">
-                    <img src="images/invites.png" alt="Retrait des clés à tout moment">
-                  </div>
-                </div>
-
-                <div class="col-xs-6 col-sm-4">
-                  <div class="use">
-                    <h4><br>4. Vos invités peuvent récupérer vos clés à tout moment</h4>
-                  </div>
-                </div>
-              </div>
+            <div class="col-xs-12 col-sm-6"><br>
+                <h4 style="padding-top:0px;padding-bottom:0px;">Email :<br>
+                <a href="mailto:contact@atthecorner.fr">contact@atthecorner.fr</a><br><br>
+                Téléphone :<br>
+                06.89.52.88.73</h4>
             </div>
-          </div>
-        </div>
-      
 
-      <!-- Le départ-->
-      <div style="padding-top:20px;padding-bottom:20px;">
-        <div class="container-fluid" style="text-align:center;">
-          <div class="spoiler" onclick="ouvrirFermerSpoiler(this);">
-            <h6><a>Check-Out : Comment se déroule le service lors du départ de mes&nbsp;invités&nbsp;?</a></h6>    
-              <div class="contenuSpoiler">
-
-                <div class="use" style="padding-right:10%;padding-left:10%; padding-top:0px;">
-                  <h4><br>Vous avez loué votre appartement grâce à votre site préféré : Airbnb, Sejourning, MorningCroissant, HouseTrip, Misterbnb... et vous venez de vous rendre compte que vous ne pourrez pas récupérer vos clés à la fin du séjour de vos invités. Pas de problème, At The Corner est là.</h4>
-                </div>   
-
-                <div class="row">         
-                  <div class="col-xs-6 col-sm-4 col-sm-offset-2" >
-                    <div class="use">
-                      <h4><br>1. Vous sélectionnez un hôtel et réservez le service</h4>
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-sm-4">
-                    <div class="use">
-                      <img src="images/ordinateur.png" alt="Réservation d'un service de gestion de clés">
-                    </div>
-                  </div>
-                </div>     
-                <div class="row">
-                  <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                    <div class="use"  style="border-bottom-style: solid; border-color: rgb(200,200,200); border-width:5px; padding:0px;"></div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-xs-6 col-sm-4 col-sm-offset-2">
-                    <div class="use">
-                      <img src="images/email.png" alt="Envoi des informations par email">
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-sm-4">
-                    <div class="use">
-                      <h4><br>2. Vos invités reçoivent un email récapitulatif</h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                    <div class="use"  style="border-bottom-style: solid; border-color: rgb(200,200,200); border-width:5px; padding:0px;"></div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-xs-6 col-sm-4 col-sm-offset-2">
-                    <div class="use">
-                      <h4><br>3. Vos invités déposent les clés à l'hôtel quand ils le souhaitent</h4>
-                    </div>
-                  </div>
-                  <div class="col-xs-6 col-sm-4">
-                    <div class="use">
-                      <img src="images/cles.png" alt="Dépôt des clés à l'hôtel">
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                    <div class="use"  style="border-bottom-style: solid; border-color: rgb(200,200,200); border-width:5px; padding:0px;"></div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-xs-6 col-sm-4 col-sm-offset-2">
-                    <div class="use">
-                      <img src="images/invites.png" alt="Retrait des clés à tout moment">
-                    </div>
-                  </div>
-
-                  <div class="col-xs-6 col-sm-4">
-                    <div class="use">
-                      <h4><br>4. Vous récupérez vos clés à tout moment</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-xs-12 col-sm-6"><br>
+                <h4 style="padding-top:0px;padding-bottom:0px;">
+                    Adresse postale :<br>
+                    Pierre-Julien Crovisier<br>
+                    At The Corner<br>
+                    9 rue Eugène Caron<br>
+                    92400 COURBEVOIE</h4>
             </div>
+
+
           </div>
         </div>
-        <div class="ensavoirplus">
-        <a href="faq.html">En savoir plus</a></h7>    
-        </div>
-      </div>
-
     </div>
+    </div>
+    </div>
+
+
+    <div id="map-canvas" style="height:350px"></div>
 
   
     <div id="my-footer">
@@ -637,6 +431,8 @@ window.onload = pause;
         <div style="height:50px"></div>
         <a href="mentionslegales.html">Mentions légales et CGU</a> - 2015 © At The Corner
     </div>
+
+
 
     <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

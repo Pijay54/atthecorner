@@ -2,11 +2,14 @@
 <html>
   <head>
     <title>At The Corner, un hôtelier de votre quartier s'occupe de vos clés</title>
-    <meta name="description" content="Ne râtez plus de locations de votre logement pour des raisons logistiques" />
+    <meta name="description" content="Ne râtez plus de location de votre logement pour des raisons logistiques" />
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
 
     <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Open+Sans:700italic,400' rel='stylesheet' type='text/css'>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -67,17 +70,20 @@ tagAnalyticsCNIL.CookieConsent = function() {
         var div = document.createElement('div');
         div.setAttribute('id','cookie-banner');
         div.setAttribute('width','70%');
+
         // Le code HTML de la demande de consentement
         div.innerHTML =  '<div style="background-color:#fff;text-align:center;padding-top:60px;padding-bottom:10px;font-size:12px;\
         border-bottom:1px solid #eeeeee;" id="cookie-banner-message" align="center">Ce site utilise Google\
         Analytics. En continuant à  naviguer, vous nous autorisez à déposer un cookie à des fins de mesure\
-        d\'audience. <a href="javascript:tagAnalyticsCNIL.CookieConsent.showInform()" \
-        style="text-decoration:underline;"> En savoir plus ou s\'opposer</a>.</div>';
-        // Vous pouvez modifier le contenu ainsi que le style
-        // Ajoute la bannière juste au début de la page 
-        bodytag.insertBefore(div,bodytag.firstChild); 
+        d\'audience. <button style="text-decoration:underline;color:#00918b;" name="cancel" onclick="tagAnalyticsCNIL.CookieConsent.hideInform()"\
+        >Fermer </button><a href="javascript:tagAnalyticsCNIL.CookieConsent.showInform()" \
+        style="text-decoration:underline;color:black;"> En savoir plus</a></div>';
+                        bodytag.insertBefore(div,bodytag.firstChild); 
         document.getElementsByTagName('body')[0].className+=' cookiebanner';    
         createInformAndAskDiv();
+        // Vous pouvez modifier le contenu ainsi que le style
+        // Ajoute la bannière juste au début de la page 
+
      }
           
           
@@ -172,11 +178,10 @@ tagAnalyticsCNIL.CookieConsent = function() {
         left:50%; margin-top:0px; margin-left:-150px; z-index:100000; opacity:1" id="inform-and-consent">\
         <div><span><b>Les cookies Google Analytics</b></span></div><br><div>Ce site utilise  des cookies\
         de Google Analytics,    ces cookies nous aident à  identifier le contenu qui vous interesse le plus\
-        ainsi qu\'à  repérer certains dysfonctionnements. Vos données de navigations sur ce site sont\
-        envoyées à  Google Inc</div><div style="padding :10px 10px;text-align:center;"><button\
+        ainsi qu\'à  repérer certains dysfonctionnements.</div><div style="padding :10px 10px;text-align:center;"><button\
         style="margin-right:50px;text-decoration:underline;" name="S\'opposer" onclick="tagAnalyticsCNIL.CookieConsent.gaOptout();\
         tagAnalyticsCNIL.CookieConsent.hideInform();" id="optout-button" >S\'opposer</button>\
-        <button style="text-decoration:underline;" name="cancel" onclick="tagAnalyticsCNIL.CookieConsent.hideInform()"\
+        <button style="text-decoration:underline;color:#00918b;" name="cancel" onclick="tagAnalyticsCNIL.CookieConsent.hideInform()"\
         >Accepter</button></div></div>';
         // Ajoute la bannière juste au début de la page 
         bodytag.insertBefore(div,bodytag.firstChild); 
@@ -284,10 +289,10 @@ tagAnalyticsCNIL.CookieConsent.start();
 </script>
 
   </head>
-  
+
   <body>
     <!-- Navbar. -->
-    <nav class="navbar navbar-default navbar-fixed-top" style ="max-width: 1500px; margin: 0 auto !important; float: none !important;">
+    <nav class="navbar navbar-default navbar-fixed-top" style ="max-width: 1500px; margin: 0 auto !important; float: none !important;padding-left:30px;padding-right:30px;">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -296,226 +301,208 @@ tagAnalyticsCNIL.CookieConsent.start();
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><font color="#FF4024">AT THE CORNER</font></a>
+          <a class="navbar-brand" href="#"><img style="position:fixed;bottom:10px;" src="images/at-the-corner.png" alt="AT THE CORNER"><!--<font color="#FF4024">AT THE CORNER</font>--></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <!--<li><a id="special" href="reserver.html" style="color:rgb(252,252,252)">Réserver</a></li>-->
-            <li><a href="prixetservices.html">Prix et Services</a></li>
-            <li><a href="partenaire.html">Partenaires</a></li>
+            <li><a id="special" href="reserver.html" style="color:rgb(252,252,252)">Réserver</a></li>
+            <li><a href="prixetservices.html">Services et prix</a></li>
+            <li><a href="securite.html">Securité</a></li>
+            <li><a href="invites.html">I am a guest</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
-    </nav>
+    </nav>    
 
-    
-
-      <div class="row"  id="my-header" style="background-image:url(images/smallmainpic.jpg);text-align:center;">
+      <div class="row"  id="my-header" style="background-image:url(images/street.jpg);">
         <div class="col-xs-9 col-xs-offset-3 col-sm-5 col-sm-offset-6">
-          <h1>Un hôtelier de votre quartier s'occupe de vos invités</h1>
+          <h1>Vous&nbsp;louez, <br>un&nbsp;hôtelier s’occupe&nbsp;des&nbsp;clés</h1>
         </div>
+
+        <!-- padding-top:350px;padding-right:0px;margin-right:0px; <div style="background-color:rgba(10, 10, 10, 0.4); height:80px;vertical-align:center;">
+          <h1 style="text-align:center">Vous louez, un hôtelier s’occupe des clés
+</h1>
+      </div>-->
       </div>
 
-
-    <!-- Avantages mis en avant
-    <div class="container-fluid" style="text-align:center;">
-      <div class="row">
-        <div class="col-xs-12 col-sm-4">
-          <div class="feature">
-            <img src="images/smallkey.png" alt="Clés">
-            <h2>Réception ouverte 24/7</h2>
-            <!--<h4>Donnez-lui vos clés et partez l'esprit libre</h4>
-            <h4>Il est disponible non-stop pour vos invités</h4>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-4">
-          <div class="feature">
-            <img src="images/smallquartier.png" alt="Réceptionniste">
-            <h2>Service de proximité</h2>
-            <!--<h4>Faites quelques pas et ça y est, vous êtes arrivés</h4>
-            <h4>Il se trouve à côté de chez vous et connait le quartier</h4>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-4">
-          <div class="feature">
-            <img src="images/smallconcierge.png" alt="Services complémentaires">
-            <h2>Profesionnel de l'accueil</h2>
-            <h4>Il acueille vos invités en français et en anglais</h4>
-          </div>
-        </div>
-
-      </div>
-    </div>-->
 
 
         <!-- Avantages mis en avant-->
+    <div class="commun">
     <div class="container-fluid" style="text-align:center;">
       <div class="row">
         <div class="col-xs-12 col-sm-4">
           <div class="feature">
-            <img src="images/smallkey.png" alt="Clés">
-            <h2>Un endroit sûr, ouvert 24/7</h2>
+            <img src="images/gestion-de-cles.png" alt="24h/24 7j/7">
+            <h2 style="text-align:center;">Ouvert 24h/24 et 7j/7</h2>
             <!--<<h4>Obligé d'adapter son programme personnel pour pouvoir louer son appartement ? FAUX !!</h4>-->
-            <h4>Vous déposez vos clés à l'hôtel et vos invités les récupèrent à tout moment.</h4>
+            <h4>Vous déposez vos clés à l'hôtel et vos invités les récupèrent à tout moment</h4>
+
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-xs-12 col-xs-offset-0 hidden-sm hidden-md hidden-lg">
+            <div style="height:40px"></div>
+          </div>
+
+          <div class="col-xs-12 col-sm-4">
           <div class="feature">
-            <img src="images/smallquartier.png" alt="Réceptionniste">
-            <h2>Des services de proximité</h2>
-            <!--<h4>Faites quelques pas et ça y est, vous êtes arrivés</h4>-->
-            <h4>Vos invités profitent des services de l'hôtel : consignes, petits-déjeuners...</h4>
+            <img src="images/proximite.png" alt="Dans votre quartier">
+            <h2 style="text-align:center;">A côté de chez vous</h2>
+            <!--<h4>Faites quelques pas et ça y est, vous êtes déjà arrivé</h4>-->
+            <h4>Vous choisissez l'hôtel le plus proche de chez vous</h4>
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-12 col-xs-offset-0 hidden-sm hidden-md hidden-lg">
+            <div style="height:40px"></div>
+          </div>
+
+          <div class="col-xs-12 col-sm-4">
           <div class="feature">
-            <img src="images/smallconcierge.png" alt="Services complémentaires">
-            <h2>Un professionnel de l'accueil</h2>
-            <h4>Il conseille vos invités sur la ville et le quartier en français ou en anglais.</h4>
+            <img src="images/a-tout-moment.png" alt="A tout moment">
+            <h2 style="text-align:center;">Même au dernier moment</h2>
+            <h4>Réservez jusqu’à 5 minutes avant de déposer vos clés</h4>
           </div>
         </div>
 
+
+
       </div>
     </div>
+    <div style="height:40px"></div>
 
-          <!-- Sondage-->
-      <div style="background-color:rgb(240,240,240);padding:45px;padding-top:30px;text-align:center;">
-        <h2>Gagnez notre reconnaissance éternelle</h2>
-        <h4>Aidez-nous à vous proposer les services les plus pertinents en répondant à ces sondages en 2 minutes chrono</h4>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6 col-sm-offset-0">
-              <br><a href="https://docs.google.com/forms/d/1OlqwJlu-_h-O0YxmVfcVEilNUbLI0mu7s17YBobtrYA/viewform?usp=send_form" target=_blank style="font-size:18px">Sondage dédié aux hôtes</a>
-            </div>
 
-            <div class="col-xs-12 col-sm-6 col-sm-offset-0"> 
-              <br>
-              <a href="https://docs.google.com/forms/d/1t1fC_6yMle6HtA2sedPovacMpjeE2qUtlAc-3yKGnwo/viewform?usp=send_form" target=_blank style="font-size:18px">Sondage dédié aux voyageurs</a>
-            </div>
+        <div class="ensavoirplus">
+        <a href="prixetservices.html">En savoir plus</a></h7>    
+        </div>
+    </div>
 
+    <!-- Comment coûte un service At The Corner ?-->
+    <div class="commun-gris">
+            <h3>Combien coûte un service At&nbsp;The&nbsp;Corner ?<br><br></h3>
+        
+              <div class="prix">
+                <h4 style="font-size:40px;color:rgb(250,250,250);">10 €</h4>
+                <div style="height:5px;"></div>
+                <!--<h4 style="border-bottom-style: solid; border-color: grey; border-width:2px;">Par gestion de clés<br><br><br></h4>-->
+                <h4 style="color:rgb(250,250,250);">Par gestion de clés (Check-In ou Check-Out)<br></h4>
+
+                <div style="height:25px;"></div>
+
+            <div style="text-align:center"><a id="boutton" style="cursor:pointer;color:white;text-decoration:none;" href="reserver.html">Réserver</a>
+</div>                <div style="height:25px;"></div>
+
+              
+              <!--<h4 style="line-height:40px;padding:10px;color:white;">
+                Sans engagement<br>
+                Visa, Mastercard
+              </h4>-->
           </div>
         </div>
-      </div>
 
-<!-- Inscription-->
-<div class="row" id="my-header" style="background-image:url(images/Paris_Night.jpg);padding-top:0px;">
-  <div class="container-fluid" style="text-align:center;">
-    <div class="row">
-      <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 hidden-xs">
-        <div style="height:70px"></div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
-        <h1 style="text-align:center; font-size:25px;">Sortie prévue à Paris mi-2015.<br>Soyez l'un des premiers utilisateurs.<br></h1>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-1" >
-        <div id="wufoo-zzmk6f20ku2vuu">
-          Fill out my <a href="https://pijay.wufoo.com/forms/zzmk6f20ku2vuu">online form</a>.
-        </div>
-        <!--<div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Online contact and registration forms from <a href="http://www.wufoo.com">Wufoo</a>.</div>-->
-        <script type="text/javascript">var zzmk6f20ku2vuu;(function(d, t) {
-          var s = d.createElement(t), options = {
-          'userName':'pijay',
-          'formHash':'zzmk6f20ku2vuu',
-          'autoResize':false,
-          'height':'160',
-          'async':true,
-          'host':'wufoo.com',
-          'header':'hide',
-          'ssl':true};
-          s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-          s.onload = s.onreadystatechange = function() {
-          var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-          try { zzmk6f20ku2vuu = new WufooForm();zzmk6f20ku2vuu.initialize(options);zzmk6f20ku2vuu.display(); } catch (e) {}};
-          var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-          })(document, 'script');
-        </script>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-    <!-- Ne râtez plus de locations pour des raisons logistiques-->
+        <!-- Qui utilise At The Corner-->
+    <div class="commun">
+        <h3>Qui utilise At&nbsp;The&nbsp;Corner ?<br><br></h3>
     <div class="details">
-      <div class="container-fluid">
-        <div class="row" >
-          <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0">
-            <img src="images/photocles.jpg" alt="">
-          </div>
-
-          <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0" style="text-align:center;">
-            <br>
-            <h2>Ne ratez plus de location pour des raisons logistiques</h2>
-            <h4><a href="prixetservices.html#logistiques">En savoir plus</a></h4>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      <!-- Vos invités vous apprécieront-->
-      <div class="details" style="background-color:rgb(240,240,240);">
         <div class="container-fluid">
           <div class="row">
-            <div class="hidden-xs col-sm-6 col-sm-offset-0">
-              <br>
-              <h2>Vos invités apprécieront les plus de nos services</h2>
-              <h4><a href="prixetservices.html#invites">En savoir plus</a></h4>
+            <div class="col-xs-12 col-sm-6"><br>
+            <img src="images/door.jpg" alt="Hôtes de Airbnb, Sejourning, HouseTrip, Misterbnb">
+                <h4 style="padding:5%;padding-top:20px;padding-bottom:20px;">Vous, qui louez votre logement sur les sites de location entre particuliers : Airbnb, Sejourning, HouseTrip, Misterbnb...</h4>
             </div>
 
-            <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0">
-              <img src="images/thankyou.jpg" alt="">
+            <div class="col-xs-12 col-sm-6"><br>
+            <img src="images/amis.jpg" alt="Accès à vos amis et aux professionnels">
+                <h4 style="padding:5%;padding-top:20px;padding-bottom:20px;">Vous, qui avez besoin de donner un accès à votre logement à des amis, de la famille ou des professionnels</h4>
             </div>
 
-            <div class="col-xs-12 col-xs-offset-0 hidden-sm hidden-md hidden-lg">
-              <br>
-              <h2>Vos invités apprécieront les plus de nos services</h2>
-              <h4><a href="prixetservices.html#invites">En savoir plus</a></h4>
-            </div>
 
           </div>
         </div>
+                </div>
+                    <div style="height:40px"></div>
+
+                <div class="ensavoirplus">
+        <a href="reserver.html">Réserver maintenant</a></h7>    
+        </div>
+    </div>
+    </div>
+
+            <!-- Comment focntionne At The Corner ?-->
+        <div class="commun-gris">
+            <h3>Comment fonctionne At&nbsp;The&nbsp;Corner ?<br><br></h3>
+            <div class="container-fluid" style="text-align:center;">    
+
+               <div class="row">         
+                  <div class="col-xs-12 col-sm-3" >
+                    <div class="use">
+                        <img src="images/ordinateur.png" alt="Réservation d'un service de gestion de clés">
+                        <h4>1. Vous sélectionnez un hôtel et réservez le service<br></h4>
+                    </div>
+                  </div>
+
+                <div class="col-xs-10 col-xs-offset-1 hidden-sm hidden-md hidden-lg">
+                  <div class="use"  style="border-bottom-style: solid; border-color: rgb(200,200,200); border-width:5px; padding:0px;"></div>
+                </div>
+
+                <div class="col-xs-12 col-sm-3" >
+                    <div class="use">
+                        <img src="images/email.png" alt="Envoi des informations par email">
+                        <h4 style="padding-top:0px">2. Vos invités reçoivent un email récapitulatif<br></h4>
+                    </div>
+                  </div>
+
+                <div class="col-xs-10 col-xs-offset-1 hidden-sm hidden-md hidden-lg">
+                  <div class="use"  style="border-bottom-style: solid; border-color: rgb(200,200,200); border-width:5px; padding:0px;"></div>
+                </div>
+
+                <div class="col-xs-12 col-sm-3" >
+                    <div class="use">
+                        <img src="images/cles.png" alt="Dépôt des clés à tout moment">
+                        <h4>3. Vous déposez vos clés à l'hôtel quand vous le souhaitez<br></h4>
+                    </div>
+                  </div>
+
+                <div class="col-xs-10 col-xs-offset-1 hidden-sm hidden-md hidden-lg">
+                  <div class="use"  style="border-bottom-style: solid; border-color: rgb(200,200,200); border-width:5px; padding:0px;"></div>
+                </div>
+
+                <div class="col-xs-12 col-sm-3" >
+                    <div class="use">
+                        <img src="images/invites.png" alt="Retrait des clés à tout moment">
+                        <h4>4. Vos invités peuvent récupérer vos clés à tout moment<br></h4>
+                    </div>
+                  </div>
+
+          </div>
+        </div>
+            <div style="height:40px"></div>
+
+                <div class="ensavoirplus">
+        <a href="prixetservices.html#services">En savoir plus</a></h7>    
+        </div>
+                </div>
+
+
       </div>
-
-      <!-- Réservez en toute confiance-->
-      <div class="details">
-        <div class="container-fluid">
-          <div class="row" >
-            <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0">
-                <img src="images/cartecredit.jpg" alt="">
-              </div>
-
-            <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0">
-              <br>
-              <h2>Réservez en toute confiance</h2>
-              <h4><a href="prixetservices.html#confiance">En savoir plus</a></h4>
-            </div>
-          </div>
-        </div>
       </div>
 
   
     <div id="my-footer">
        <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-6 col-xs-offset-0 col-sm-4 col-sm-offset-0">
-            <ul style="list-style-type:none;padding:0px; margin:0px">
-              <!--<li><a href="#">Equipe</a></li>-->
-              <li><a href="mentionslegales.html">Mentions légales</a></li>
+            <div class="row">
+          <div class="col-xs-6 col-xs-offset-0 col-sm-6 col-sm-offset-0">
+            <ul style="list-style-type:none;padding:0px; margin:0px;">
+                <li><a href="partenaire.html">Devenir partenaire</a></li>
+                <li><a href="faq.html">Questions et réponses</a></li>
             </ul>
             <br>  
           </div>
+
         
-          <div class="col-xs-6 col-xs-offset-0 col-sm-4 col-sm-offset-0">
+          <div class="col-xs-6 col-xs-offset-0 col-sm-6 col-sm-offset-0">
               Suivez-nous sur :
               <div style="height:10px"></div>
               <ul class="list-inline" style="text-align:center;padding:0px; margin:0px">
@@ -523,27 +510,11 @@ tagAnalyticsCNIL.CookieConsent.start();
                 <li><a href="https://twitter.com/AttheCornerFr" target=_blank><i class="fa fa-twitter"></i></a></li><li></li>
                 <li><a href="https://plus.google.com/u/0/b/113596215671857215006/113596215671857215006/about" target=_blank><i class="fa fa-google-plus" ></i></a></li>
               </ul> 
-              <div style="height:30px"></div>
-          </div>
-
-          <div class="col-xs-12 col-xs-offset-0 col-sm-4 col-sm-offset-0">
-           <ul style="list-style-type:none;padding:0px; margin:0px">
-              <li>Contactez-nous : </li>
-              <div style="height:10px"></div>
-              <li><a href="mailto:contact@atthecorner.fr">contact@atthecorner.fr</a></li>
-              <li>06 89 52 88 73</li>
-            </ul>
           </div>
         </div>
-
-
-        <div class="row">
-          <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-3">
-            <div style="height:40px"></div>
-              2015 © At The Corner
-            </div>
-          </div>
         </div>
+        <div style="height:50px"></div>
+        <a href="mentionslegales.html">Mentions légales et CGU</a> - 2015 © At The Corner
     </div>
 
 

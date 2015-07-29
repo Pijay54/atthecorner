@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Avec At The Corner, ne faites pas la guerre, faites des affaires</title>
-    <meta name="description" content="Grâce à votre expérience dans l’accueil des touristes et à vos infrastructures, vous, hôteliers, pouvez profiter de la location de logements entre particuliers." />
+    <title>Avec At The Corner, faites des affaires, pas la guerre</title>
+    <meta name="description" content="Capitalsez sur votre organisation, vos infrastructures et votre expérience dans l'accueil et proposez vos prestations complémentaires à l'hébergement aux personnes extérieures à votre établissement" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+
+            <link rel="icon" type="image/png" href="images/favicon.png" />
+<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
     
     <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Open+Sans:700italic,400' rel='stylesheet' type='text/css'>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -21,7 +24,7 @@
     
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
 
-    <!--Google Analytics-->
+ <!--Google Analytics-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -32,17 +35,6 @@
   ga('send', 'pageview');
 
 </script>
-
-    <!--Comptage du nombre de téléchargement de la plaquette-->
-<!--<script>
-var trackOutboundLink = function(url) {
-   ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
-     function () {
-     document.location = url;
-     }
-   });
-}
-</script>-->
 
 <!-- Informations cookies-->
 <script>
@@ -79,17 +71,20 @@ tagAnalyticsCNIL.CookieConsent = function() {
         var div = document.createElement('div');
         div.setAttribute('id','cookie-banner');
         div.setAttribute('width','70%');
+
         // Le code HTML de la demande de consentement
         div.innerHTML =  '<div style="background-color:#fff;text-align:center;padding-top:60px;padding-bottom:10px;font-size:12px;\
         border-bottom:1px solid #eeeeee;" id="cookie-banner-message" align="center">Ce site utilise Google\
         Analytics. En continuant à  naviguer, vous nous autorisez à déposer un cookie à des fins de mesure\
-        d\'audience. <a href="javascript:tagAnalyticsCNIL.CookieConsent.showInform()" \
-        style="text-decoration:underline;"> En savoir plus ou s\'opposer</a>.</div>';
-        // Vous pouvez modifier le contenu ainsi que le style
-        // Ajoute la bannière juste au début de la page 
-        bodytag.insertBefore(div,bodytag.firstChild); 
+        d\'audience. <button style="text-decoration:underline;color:#00918b;" name="cancel" onclick="tagAnalyticsCNIL.CookieConsent.hideInform()"\
+        >Fermer </button><a href="javascript:tagAnalyticsCNIL.CookieConsent.showInform()" \
+        style="text-decoration:underline;color:black;"> En savoir plus</a></div>';
+                        bodytag.insertBefore(div,bodytag.firstChild); 
         document.getElementsByTagName('body')[0].className+=' cookiebanner';    
         createInformAndAskDiv();
+        // Vous pouvez modifier le contenu ainsi que le style
+        // Ajoute la bannière juste au début de la page 
+
      }
           
           
@@ -184,11 +179,10 @@ tagAnalyticsCNIL.CookieConsent = function() {
         left:50%; margin-top:0px; margin-left:-150px; z-index:100000; opacity:1" id="inform-and-consent">\
         <div><span><b>Les cookies Google Analytics</b></span></div><br><div>Ce site utilise  des cookies\
         de Google Analytics,    ces cookies nous aident à  identifier le contenu qui vous interesse le plus\
-        ainsi qu\'à  repérer certains dysfonctionnements. Vos données de navigations sur ce site sont\
-        envoyées à  Google Inc</div><div style="padding :10px 10px;text-align:center;"><button\
+        ainsi qu\'à  repérer certains dysfonctionnements.</div><div style="padding :10px 10px;text-align:center;"><button\
         style="margin-right:50px;text-decoration:underline;" name="S\'opposer" onclick="tagAnalyticsCNIL.CookieConsent.gaOptout();\
         tagAnalyticsCNIL.CookieConsent.hideInform();" id="optout-button" >S\'opposer</button>\
-        <button style="text-decoration:underline;" name="cancel" onclick="tagAnalyticsCNIL.CookieConsent.hideInform()"\
+        <button style="text-decoration:underline;color:#00918b;" name="cancel" onclick="tagAnalyticsCNIL.CookieConsent.hideInform()"\
         >Accepter</button></div></div>';
         // Ajoute la bannière juste au début de la page 
         bodytag.insertBefore(div,bodytag.firstChild); 
@@ -299,7 +293,7 @@ tagAnalyticsCNIL.CookieConsent.start();
   
   <body>
     <!-- Navbar. -->
-    <nav class="navbar navbar-default navbar-fixed-top" style ="max-width: 1500px; margin: 0 auto !important; float: none !important;">
+    <nav class="navbar navbar-default navbar-fixed-top" style ="max-width: 1500px; margin: 0 auto !important; float: none !important;padding-left:30px;padding-right:30px;">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -308,37 +302,40 @@ tagAnalyticsCNIL.CookieConsent.start();
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><font color="#FF4024">AT THE CORNER</font></a>
+          <a class="navbar-brand" href="index.html"><img style="position:fixed;bottom:10px;" src="images/at-the-corner.png" alt="AT THE CORNER"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <!--<li><a id="special" href="reserver.html" style="color:rgb(252,252,252)">Réserver</a></li>-->
-            <li><a href="prixetservices.html">Prix et Services</a></li>
-            <li><a href="#" style="color:#FF4024">Partenaires</a></li>
+            <li><a id="special" href="reserver.html" style="color:rgb(252,252,252)">Réserver</a></li>
+            <li><a href="prixetservices.html">Services et tarifs</a></li>
+            <li><a href="securite.html">Securité</a></li>
+            <li><a href="invites.html">I am a guest</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
 
-    <div class="row" id="my-header" style="background-image:url(http://lorempixel.com/1300/1000/abstract/);">
+    <div class="row" id="my-header" style="background-image:url(images/smallmainpic.jpg)">
       <div class="col-xs-9 col-xs-offset-3 col-sm-5 col-sm-offset-6">
-        <h1>Hôteliers, faites des affaires, pas la guerre</h1>
+        <h1>Hôteliers, faites&nbsp;des&nbsp;affaires, pas&nbsp;la&nbsp;guerre</h1>
       </div>
     </div>
 
-
+<div class="commun">
     <div class="container-fluid" style="text-align:center;">
       <div class="row">
-        <div class="col-xs-12 col-sm-10 col-sm-offset-1" style="padding:30px">
-            <h3>Captez une partie de la valeur liée à la location de logements entre particuliers</h3>
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1" style="padding:20px">
+            <h3>Captez une partie de la valeur liée à la location de logements entre&nbsp;particuliers<br><br></h3>
             <h4><b>
-              Grâce à votre expérience dans l’accueil des touristes, à votre organisation et à vos infrastructures, vous, hôteliers, pouvez profiter de l'évolution actuelle du marché.</b><br><p></p>
+              Grâce à votre expérience dans l’accueil des touristes, à votre organisation et à vos infrastructures, vous, hôteliers, pouvez profiter de l'évolution actuelle du marché.</b><br><br>
               At The Corner vous permet d'entrer en contact avec les utilisateurs des sites de location entre particuliers afin de leur proposer des services complémentaires à l'hébergement.
             </h4>
         </div>
       </div>
     </div>
+  </div>
 
     <!-- Inscription-->
 <div class="row" id="my-header" style="background-image:url(images/Paris_Night.jpg);padding-top:0px;">
@@ -356,67 +353,43 @@ tagAnalyticsCNIL.CookieConsent.start();
       <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
         <h1 style="text-align:center; font-size:25px;">Vous êtes intéressé par un partenariat. Remplissez ce formulaire et nous vous contacterons.<br></h1>
         <div style="height:40px"></div>
-        <button type="button" class="btn btn-default" style="background-color:#ff6524; border:#ff6524; padding:10px;"><a href="https://docs.google.com/forms/d/1BqlvojzuYZjEM7Mj8qowAk-P7fbchPL4uF-rlCzo8j4/viewform?usp=send_form" target="_blank" style="font-size:25px;color:white;">Formulaire</a>
+          <div style="text-align:center"><div class="btn-group btn-group-lg" ><button type="button" class="btn btn-default" id="boutton"><a href="https://docs.google.com/forms/d/1BqlvojzuYZjEM7Mj8qowAk-P7fbchPL4uF-rlCzo8j4/viewform?usp=send_form" target="_blank" style="color:white">Formulaire</a></button></div></div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-xs-12 col-sm-offset-1 col-sm-8">
 
-
-
-      <!-- <div id="wufoo-m1sl6z2f1193ndp">
-Fill out my <a href="https://pijay.wufoo.com/forms/m1sl6z2f1193ndp">online form</a>.
-</div>
-<!--<div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">There are tons of <a href="http://www.wufoo.com/features/">Wufoo features</a> to help make your forms awesome.</div>
-<script type="text/javascript">var m1sl6z2f1193ndp;(function(d, t) {
-var s = d.createElement(t), options = {
-'userName':'pijay',
-'formHash':'m1sl6z2f1193ndp',
-'autoResize':false,
-'height':'160',
-'async':true,
-'host':'wufoo.com',
-'header':'hide',
-'ssl':true};
-s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-s.onload = s.onreadystatechange = function() {
-var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-try { m1sl6z2f1193ndp = new WufooForm();m1sl6z2f1193ndp.initialize(options);m1sl6z2f1193ndp.display(); } catch (e) {}};
-var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-})(document, 'script');
-
-        </script>-->
       </div>
     </div>
   </div>
 </div>
 
-
+<div class="commun">
     <div class="container-fluid" style="text-align:center;">
       <div class="row">
 
         <div class="col-xs-12 col-sm-4">
           <div class="feature">
-            <img src="images/smallkey.png" alt="picture description">
-            <h2>Gérez les clés des appartements du quartier</h2>
-            <h4>Les hôtes du quartier qui louent leurs appartements déposent les clés chez vous. Les voyageurs viennent chercher les clés à leur arrivée et les rapportent à leur départ.</h4>
+            <img src="images/smallkey.png" alt="Gestion de clés">
+            <h2 style="text-align:center;">Gérez les clés des appartements du quartier</h2>
+            <h4>Les hôtes du quartier qui louent leurs appartements déposent les clés chez vous. Les voyageurs viennent chercher les clés à leur arrivée et les rapportent à leur départ.<br><br><br></h4>
           </div>
         </div>
 
         <div class="col-xs-12 col-sm-4">
           <div class="feature">
-            <img src="images/smallbillet.png" alt="picture description">
-            <h2>Proposez des services complémentaires</h2>
-            <h4>Vous avez l'expérience, les contacts et les infrastructures pour offrir des prestations complémentaires : stockage de bagages, billeterie, petits-déjeuners, accès à la piscine...</h4>
+            <img src="images/billeterie.png" alt="Conciergerie">
+            <h2 style="text-align:center;">Proposez des services complémentaires</h2>
+            <h4>Vous avez l'expérience, les contacts et les infrastructures pour offrir des prestations complémentaires : stockage de bagages, billeterie, petits-déjeuners, accès&nbsp;à&nbsp;la&nbsp;piscine...<br><br><br></h4>
           </div>
         </div>
 
         <div class="col-xs-12 col-sm-4">
           <div class="feature">
-            <img src="images/smallpeople.png" alt="picture description">
-            <h2>Maintenez le contact avec chaque voyageur</h2>
-            <h4>Les voyageurs aiment avoir des conseils sur le quartier et les sites à visiter. Le tourisme étant avant tout une suite de prestations, pourquoi l’hôtel n’en serait-il pas la locomotive ?</h4>
+            <img src="images/smallpeople.png" alt="Contact">
+            <h2 style="text-align:center;">Maintenez le contact avec chaque voyageur</h2>
+            <h4>Les voyageurs aiment avoir des conseils sur le quartier et les sites à visiter. Le tourisme étant avant tout une suite de prestations, pourquoi l’hôtel n’en serait-il pas la locomotive ?<br><br><br></h4>
           </div>
         </div>
 
@@ -427,7 +400,7 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     <div style="height:40px;" ></div>
 
 <!--onclick="ga('send','event','telechargementplaquette','images/At The Corner - Plaquette.pdf')"-->
-
+</div>
 
     <div class="case" >
           <div class="container-fluid" style="text-align:center; padding-top:20px">
@@ -443,14 +416,14 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
         <div class="row">
 
           <div class="col-xs-12 col-sm-6">
-            <div style="padding:20px;">
+            <div style="padding:10px;">
               <iframe width='100%' height='400' frameborder='0' src='https://julienguillot.cartodb.com/viz/9bb529f4-7be8-11e4-9540-0e4fddd5de28/embed_map' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
             </div>
           </div>
 
           <div class="col-xs-12 col-sm-6">
             <div>
-              <ul>
+              <ul style="margin:10px;padding:10px;">
                 <li>Cette carte représente les annonces parisiennes disponibles sur le site Airbnb</li><br>
                 <li>Il existe des dizaines de sites facilitant la location de logements entre particuliers (autres qu'Airbnb)</li><br>
                 <li>Chaque point jaune symbolise une annonce</li><br>
@@ -463,26 +436,27 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
       </div>
     </div>
 
+<div class="commun">
     <div class="container-fluid" style="text-align:center">
       <div class="row">
 
         <div class="col-xs-12 col-sm-5 col-sm-offset-1">
-        <div style="height:40px"></div>
 
           <div class="citation">
             <i>''Ceux qui n’évoluent pas disparaîtront''</i>
           </div>
-          <div class="auteur">Georges Panayotis, Businessman et consultant pour l'industrie hôtelière, <a href="http://hospitality-on.com/edito/editos/ceux-qui-nevoluent-pas-disparaitront/" onclick="trackOutboundLink(‘http://hospitality-on.com/edito/editos/ceux-qui-nevoluent-pas-disparaitront/’); return false;"target="_blank">Hospitality On</a>
+          <div class="auteur">Georges Panayotis, Businessman et consultant pour&nbsp;l'industrie&nbsp;hôtelière, <a href="http://hospitality-on.com/edito/editos/ceux-qui-nevoluent-pas-disparaitront/" onclick="trackOutboundLink(‘http://hospitality-on.com/edito/editos/ceux-qui-nevoluent-pas-disparaitront/’); return false;"target="_blank">Hospitality&nbsp;On</a>
           </div>
         </div>
 
         <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0">
-          <div class="feature">
-            <img src="images/georges.png" alt="Georges Panayotis" style="text-align:center;";>
+          <div class="details">
+            <img style="text-align:center;max-width:300px;" src="images/georges-panayotis.png" alt="Adaptation à la location entre particuliers">
           </div>
         </div>
 
       </div>
+    </div>
     </div>
 
     <noscript>
@@ -494,16 +468,17 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
 
     <div id="my-footer">
        <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-6 col-xs-offset-0 col-sm-4 col-sm-offset-0">
-            <ul style="list-style-type:none;padding:0px; margin:0px">
-              <!--<li><a href="#">Equipe</a></li>-->
-              <li><a href="mentionslegales.html">Mentions légales</a></li>
+            <div class="row">
+          <div class="col-xs-6 col-xs-offset-0 col-sm-6 col-sm-offset-0">
+            <ul style="list-style-type:none;padding:0px; margin:0px;">
+                <li><a href="#">Devenir partenaire</a></li>
+                <li><a href="faq.html">Questions et réponses</a></li>
             </ul>
             <br>  
           </div>
+
         
-          <div class="col-xs-6 col-xs-offset-0 col-sm-4 col-sm-offset-0">
+          <div class="col-xs-6 col-xs-offset-0 col-sm-6 col-sm-offset-0">
               Suivez-nous sur :
               <div style="height:10px"></div>
               <ul class="list-inline" style="text-align:center;padding:0px; margin:0px">
@@ -511,27 +486,11 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
                 <li><a href="https://twitter.com/AttheCornerFr" target=_blank><i class="fa fa-twitter"></i></a></li><li></li>
                 <li><a href="https://plus.google.com/u/0/b/113596215671857215006/113596215671857215006/about" target=_blank><i class="fa fa-google-plus" ></i></a></li>
               </ul> 
-              <div style="height:30px"></div>
-          </div>
-
-          <div class="col-xs-12 col-xs-offset-0 col-sm-4 col-sm-offset-0">
-           <ul style="list-style-type:none;padding:0px; margin:0px">
-              <li>Contactez-nous : </li>
-              <div style="height:10px"></div>
-              <li><a href="mailto:contact@atthecorner.fr">contact@atthecorner.fr</a></li>
-              <li>06 89 52 88 73</li>
-            </ul>
           </div>
         </div>
-
-
-        <div class="row">
-          <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-3">
-            <div style="height:40px"></div>
-              2015 © At The Corner
-            </div>
-          </div>
         </div>
+        <div style="height:50px"></div>
+        <a href="mentionslegales.html">Mentions légales et CGU</a> - 2015 © At The Corner
     </div>
 
     <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
